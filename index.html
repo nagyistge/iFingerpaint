@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Copyright (c) 2008, Aleph-Null, Inc.
+Please contact ipod(at)aleph-null.tv with any questions.
+http://aleph-null.tv
+-->
+<html>
+<head>
+	<title>Paint</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,width=device-width, user-scalable=no" />
+	<meta name="Author" content="Matt Butcher"/>
+	<meta name="Author" content="Aleph-Null, Inc."/>
+	<meta name="keywords" lang="en" content="ipod,iphone,paint,aleph-null" />
+	<link rel="Index" href="/index.php" />
+	<link rel="stylesheet" type="text/css" href="fingerpaint.css"/>
+	<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+	<script type="text/javascript" src="fingerpaint.js"></script>
+</head>
+<body>	
+	<div id="container">
+		<div class="menubar">
+			<a class="button" id="bcolors">Colors</a>
+			<a class="button" id="blines">Lines</a>
+			<a class="button" id="bdots">Dots</a>
+			<a class="button" id="bcanvas">Canvas</a>
+		</div>
+		<canvas id="MyCanvas" width="320" height="330" 
+			onclick="void(0);"
+			></canvas>
+		<div id="fire"></div>
+	Brought to you by <a href="http://aleph-null.tv">Aleph-Null, Inc.</a>.
+	</div>
+	
+	<div id="colorsmenu" class="menuframe">
+	<table id="colors">
+		<tr>
+			<td colspan="4" id="curcolor">&nbsp;</td>
+		</tr>
+		<tr>			
+			<td id="cmaroon" class="colorcontainer" onclick="setColor('maroon')">&nbsp;</td>
+			<td id="cbrown" class="colorcontainer" onclick="setColor('brown')">&nbsp;</td>
+			<td id="cred" class="colorcontainer" onclick="setColor('red')">&nbsp;</td>
+			<td id="cpink" class="colorcontainer" onclick="setColor('pink')">&nbsp;</td>			
+		</tr>
+		<tr>
+			<td id="cgreen" class="colorcontainer" onclick="setColor('green')">&nbsp;</td>
+			<td id="cnavy" class="colorcontainer" onclick="setColor('navy')">&nbsp;</td>
+			<td id="cblue" class="colorcontainer" onclick="setColor('blue')">&nbsp;</td>			
+			<td id="cpurple" class="colorcontainer" onclick="setColor('purple')">&nbsp;</td>
+			
+		</tr>
+		<tr>
+			<td id="cdarkorange" class="colorcontainer" onclick="setColor('darkorange')">&nbsp;</td>
+			<td id="corange" class="colorcontainer" onclick="setColor('orange')">&nbsp;</td>
+			<td id="cyellow" class="colorcontainer" onclick="setColor('yellow')">&nbsp;</td>
+			<td id="clightyellow" class="colorcontainer" onclick="setColor('lightyellow')">&nbsp;</td>
+		</tr>
+
+		<tr>
+			<td id="cblack" class="colorcontainer" onclick="setColor('#000')">&nbsp;</td>
+			<td id="cdarkgray" class="colorcontainer" onclick="setColor('gray')">&nbsp;</td>
+			<td id="clightgray" class="colorcontainer" onclick="setColor('#ccc')">&nbsp;</td>
+			<td id="cwhite" class="colorcontainer" onclick="setColor('#fff')">&nbsp;</td>
+		</tr>
+		
+		
+	</table>
+	</div>
+	<div id="linesmenu" class="menuframe">
+		<ul>
+			<li><a onclick="setLineWidth(0)" id="line0">No Line</a></li>
+			<li><a onclick="setLineWidth(2)" id="line2">Thin line</a></li>
+			<li><a onclick="setLineWidth(8)" id="line8">Medium line</a></li>
+			<li><a onclick="setLineWidth(12)" id="line12">Thick line</a></li>
+			<li><a onclick="endCurrentLine()" id="line12">End this line</a></li>
+		</ul>
+	</div>
+	<div id="dotsmenu" class="menuframe">
+		<ul>
+			<li><a onclick="setDotSize(0)" id="dot0">No Dot</a></li>
+			<li><a onclick="setDotSize(4)" id="dot4">Small Dot</a></li>
+			<li><a onclick="setDotSize(8)" id="dot8">Medium Dot</a></li>
+			<li><a onclick="setDotSize(12)" id="dot12">Big Dot</a></li>
+		</ul>
+	</div>
+	<div id="canvasmenu" class="menuframe">
+		<ul>
+			<li><a onclick="clearCanvas()">Clear Canvas</a></li>
+		</ul>
+	</div>
+</body>
+</html>

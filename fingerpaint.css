@@ -1,0 +1,159 @@
+/*
+ * Copyright (c) 2008, Aleph-Null, Inc.
+ * ipod(at)aleph-null.tv
+ * http://aleph-null.tv
+ */
+body {
+	margin: 0;
+	padding: 0;
+	/* colors from iPhone spec: */
+	color: #4c566c;
+	background-color: #c5ccd3;
+	font-size: 20px;
+	font-family: Helvetica;
+	-webkit-text-size-adjust: none;
+}
+
+canvas, div {
+	margin: 0px;
+	padding: 0px;
+}
+
+td {
+	border: 1px solid gray;
+}
+
+ul {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	/*text-shadow: #4c566c 0px 1px 1px;*/
+	text-shadow: #c5ccd3 0px 1px 1px;
+	margin: 0;
+	padding: 0;
+	width: 160;
+}
+li {
+	list-style-type: none;
+	padding: 10px 10px 14px 10px;
+	height: 19px
+	line-height: 19px;
+}
+
+#container {
+	width: 320px;
+}
+
+#colorsmenu {
+	display: none;
+	position: absolute;
+	top: 31px;
+	left: 1px;
+}
+#linesmenu {
+	display: none;
+	position: absolute;
+	top: 31px;
+	left: 81px;
+}
+#canvasmenu {
+	display: none;
+	position: absolute;
+	top: 31px;
+	left: 173px;
+}
+#dotsmenu {
+	display: none;
+	position: absolute;
+	top: 31px;
+	left: 158px;
+}
+
+#curcolor {
+	font-size: 8px;
+	height: 10px;
+}
+
+#cred {
+	background-color: red;
+}
+#cmaroon {
+	background-color: maroon;
+}
+#corange {
+	background-color: orange;
+}
+#cdarkorange {
+	background-color: darkorange;
+}
+#cyellow {
+	background-color: yellow;
+}
+#clightyellow {
+	background-color: lightyellow;
+}
+#cpink {
+	background-color: pink;
+}
+#cbrown {
+	background-color: brown;
+}
+#cblue {
+	background-color: blue;
+}
+#cnavy {
+	background-color: navy;
+}
+#cgreen {
+	background-color: green;
+}
+#cpurple {
+	background-color: purple;
+}
+#cblack {
+	background-color: black;
+}
+#cdarkgray {
+	background-color: gray;
+}
+#clightgray {
+	background-color: #ccc;
+}
+#cwhite {
+	background-color: white;
+}
+
+.colorcontainer {
+	width: 25px;
+}
+
+.button {
+	/* 4 * (74 + 2 + 1) */
+	display: block;
+	width: 78px;
+	height: 30px;
+	float: left;
+	background-color: black;
+	color: white;
+	/*border: 1px solid gray;*/
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	padding-top: 2px;
+	text-decoration: none;
+	text-shadow: #4c566c 0px 1px 1px;
+	margin: 0px;
+	background-image: url(buttonbg.png);
+	/*-webkit-border-radius: 5px;*/
+}
+
+.menubar {
+	width: 320px;
+	position: relative;
+	text-align: center;
+	padding-bottom: 4px;
+}
+.menuframe {
+	background-color: #3d3d3d;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+}
